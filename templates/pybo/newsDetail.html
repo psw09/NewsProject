@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Clean Blog - Start Bootstrap Theme</title>
+        <title>뉴스플랫폼</title>
         <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -15,22 +15,27 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+   <style>
+    header.masthead {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    </style>
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="/pybo/">뉴스플랫폼</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/pybo/newsDetail">뉴스목록</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">뉴스작성</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,12 +46,15 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            {% for list in newsList %}
-                            <h1>{{list}}</h1>
-                             {% endfor %}
-                            <h2 class="subheading">연합뉴스</h2>
-                            <span class="meta">
-                                2021년 9월 12일
+
+                            <h1>유세윤·장동민, ‘한쿡사람’ 더블 MC…데뷔 17년 만에 호흡</h1>
+
+                            <h2 class="subheading" style="text-align: right;">연합뉴스</h2>
+                            <span class="meta" style="text-align: right;">
+                                작성일자 : 2021년 9월 12일
+                            </span>
+                            <span class="meta" style="text-align: right;">
+                                안진용 기자
                             </span>
 
                         </div>
@@ -59,63 +67,40 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...카카오 주식이 폭락햇습니다...</p>
-                        <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-                        <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-                        <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-                        <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-                        <h2 class="section-heading">The Final Frontier</h2>
-                        <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                        <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                        <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-                        <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-                        <h2 class="section-heading">Reaching for the Stars</h2>
-                        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-                        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-                        <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-                        <p>
-                            Placeholder text by
-                            <a href="http://spaceipsum.com/">Space Ipsum</a>
-                            &middot; Images by
-                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
+                       <p> 절친한 방송인 유세윤과 장동민이 데뷔 17년 만에 처음으로 예능 MC로 호흡을 맞춘다.
+
+                        두 사람은 티캐스트 E채널의 2021년 하반기 기대작 ‘한쿡사람’의 더블 MC로 확정됐다. 연예계 대표 절친으로 유명하지만 단둘이 MC로 나서는 것은 처음이다.
+
+                        ‘한쿡사람’은 국내 거주 중인 다양한 국적의 외국인 출연자들이 주인공이다. 회차마다 공통 주제로 브이로그를 제작해 우승자를 가리는 케이로그(K-Log) 토크쇼다. 전 세계를 강타하는 ‘K’ 열풍 속에서 외국인 시선으로 본 한국의 매력을 진솔하게 전할 예정이다.
+
+                        장동민, 유세윤은 외국인 출연자들의 에피소드를 이끌어나갈 ‘한쿡사람’의 리더이자 MC다. 외국인들의 특별한 한국 경험을 공감하고, 그 속에서 웃음 포인트를 짚어낼 예정이다. 모처럼 ‘한쿡사람’에서 다시 만나 보여줄 끈끈한 호흡에도 관심이 쏠린다.
+
+                        ‘한쿡사람’은 ‘무한도전’ ‘나는 가수다’ ‘놀러와’ 등을 맡았던 이병혁 PD와 전 세계 PD가 연출한다. 또한 ‘무한도전’ ‘라디오스타’ ‘무엇이든 물어보살’의 김태희 작가가 의기투합했다
                         </p>
+                        <div style="text-align: center;">
+                            <a href="#">좋아요 : 0</a>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="#">싫어요 : 0</a>
+                        </div>
+                        <div class="d-flex justify-content-end mb-4">
+                            <a class="btn btn-primary text-uppercase" href="#!" style="margin-right: 10px;">삭제</a>
+                            <a class="btn btn-primary text-uppercase" href="/pybo/">목록</a>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
         </article>
+
+
+        <!-- Footer-->
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
                         <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2021</div>
                     </div>
                 </div>
