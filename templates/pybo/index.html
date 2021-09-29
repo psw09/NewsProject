@@ -64,7 +64,7 @@
                     <!-- Post preview-->
                     {% for list in newsList %}
                     <div class="post-preview">
-                        <a href="post.html">
+                        <a href=/pybo/newsDetail?newsId={{list.news_id}}>
                             <h2 class="post-title">{{list.news_title}}</h2>
                             <h3 class="post-subtitle">{{list.news_content}}</h3>
                         </a>

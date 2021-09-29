@@ -7,4 +7,7 @@ urlpatterns = [
     path('newsDetail', views.newsDetail),
     path('newsInsert', views.newsInsert),
     path('newsInsertVal', views.newsInsertVal),
+    path('goodCnt', views.goodCnt),
+    path('notGoodCnt', views.notGoodCnt),
+    path('newsDelete', views.newsDelete),
 ]
