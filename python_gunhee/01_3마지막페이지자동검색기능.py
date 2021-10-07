@@ -21,7 +21,7 @@ next_buttons = entire_buttons.select("a.next") #페이지 정보가 담긴 <a>�
 minimum_buttons = entire_buttons.select("a") #10페이지 미만의 기사를 체크하기 위한 변수
 
 while True: #while문의 기본 조건을 True로 설정함
-    if len(next_buttons) >= 1: 
+    if len(next_buttons) >= 1: #"다음_page"가 하나라도 있으면 while_if문을 돈다
         page_num = page_num + 10 #한_page에 10개씩 목록이 설정되어 있기 때문에 + 10을 설정함
         for next_button in next_buttons: #attrs를 불러오기 위해서는 for문 필요
             last_url = next_button.attrs['href'] #last_ulr == 11page의 url 정보가 담겨있음
@@ -29,7 +29,7 @@ while True: #while문의 기본 조건을 True로 설정함
             soup = BeautifulSoup(result.text, "html.parser")
             entire_buttons = soup.select_one(".paging") #entire_buttons에는 11~21페이지의 url <a>가 담겨있음
             next_buttons = entire_buttons.select("a.next") #여기서 next_button에 <a> class="next nclicks"가 담겨있으면 if로, 없으면 elif 이동
-    elif len(next_buttons) == 0 and int(page_num) >= 10:
+    elif len(next_buttons) == 0 and int(page_num) >= 10: #내일 마저 수정하기
         last_buttons = entire_buttons.select("a")
         page_num = page_num + len(last_buttons)
         break
